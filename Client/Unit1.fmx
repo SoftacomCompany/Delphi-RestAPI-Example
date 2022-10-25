@@ -1,0 +1,847 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 472
+  ClientWidth = 628
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object TCMain: TTabControl
+    Align = Client
+    Size.Width = 628.000000000000000000
+    Size.Height = 472.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = PlatformDefault
+    Sizes = (
+      628s
+      423s
+      628s
+      423s
+      628s
+      423s)
+    object TabLogin: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 50.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      TabStop = False
+      Text = 'Login'
+      ExplicitSize.cx = 50.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object ToolBar4: TToolBar
+        Size.Width = 628.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Label11: TLabel
+          Align = Client
+          Margins.Left = 55.000000000000000000
+          Size.Width = 573.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Login'
+          TabOrder = 2
+        end
+      end
+      object VertScrollBox1: TVertScrollBox
+        Align = Client
+        Size.Width = 628.000000000000000000
+        Size.Height = 375.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Viewport.Width = 628.000000000000000000
+        Viewport.Height = 375.000000000000000000
+        object Label1: TLabel
+          Align = Top
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 20.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 20.000000000000000000
+          Size.Width = 608.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'User name'
+          TabOrder = 6
+          TabStop = False
+        end
+        object EditUsername: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 0
+          Position.X = 10.000000000000000000
+          Position.Y = 47.000000000000000000
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Size.Width = 608.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Label2: TLabel
+          Align = Top
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 20.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 99.000000000000000000
+          Size.Width = 608.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Password'
+          TabOrder = 5
+        end
+        object EditPassword: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 1
+          Password = True
+          Position.X = 10.000000000000000000
+          Position.Y = 126.000000000000000000
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Size.Width = 608.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          object PasswordEditButton1: TPasswordEditButton
+            CanFocus = False
+            Cursor = crArrow
+            Size.Width = 28.000000000000000000
+            Size.Height = 28.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+          end
+        end
+        object BtnLogin: TButton
+          Align = Top
+          Margins.Left = 50.000000000000000000
+          Margins.Top = 40.000000000000000000
+          Margins.Right = 50.000000000000000000
+          Position.X = 50.000000000000000000
+          Position.Y = 198.000000000000000000
+          Size.Width = 528.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = 'Login'
+          OnClick = BtnLoginClick
+        end
+        object Label3: TLabel
+          Align = Top
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 50.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 281.000000000000000000
+          Size.Width = 608.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Don'#39't have an account ?'
+          TabOrder = 4
+        end
+        object BtnRegister: TButton
+          Align = Top
+          Margins.Left = 50.000000000000000000
+          Margins.Top = 20.000000000000000000
+          Margins.Right = 50.000000000000000000
+          Position.X = 50.000000000000000000
+          Position.Y = 318.000000000000000000
+          Size.Width = 528.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          Text = 'Create a new account'
+          OnClick = BtnRegisterClick
+        end
+      end
+    end
+    object TabRegister: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 63.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      TabStop = False
+      Text = 'Register'
+      ExplicitSize.cx = 63.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object ToolBar3: TToolBar
+        Size.Width = 628.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object BtnBackToLogin: TSpeedButton
+          Align = Left
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'priortoolbutton'
+          Text = 'SpeedButton1'
+          OnClick = BtnBackToLoginClick
+        end
+        object Label10: TLabel
+          Align = Client
+          Margins.Left = 7.000000000000000000
+          Size.Width = 573.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Register a new account'
+          TabOrder = 1
+        end
+      end
+      object VertScrollBox2: TVertScrollBox
+        Align = Client
+        Size.Width = 628.000000000000000000
+        Size.Height = 375.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Viewport.Width = 628.000000000000000000
+        Viewport.Height = 375.000000000000000000
+        object Label4: TLabel
+          Align = Top
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 20.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 20.000000000000000000
+          Size.Width = 608.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'User name'
+          TabOrder = 5
+        end
+        object EditRegisterName: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 0
+          Position.X = 10.000000000000000000
+          Position.Y = 47.000000000000000000
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Size.Width = 608.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Label6: TLabel
+          Align = Top
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 20.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 99.000000000000000000
+          Size.Width = 608.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'User mail'
+          TabOrder = 4
+        end
+        object EditRegisterEmail: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 1
+          Position.X = 10.000000000000000000
+          Position.Y = 126.000000000000000000
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Size.Width = 608.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Label5: TLabel
+          Align = Top
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 20.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 178.000000000000000000
+          Size.Width = 608.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Password'
+          TabOrder = 3
+        end
+        object EditRegisterPassword: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 2
+          Password = True
+          Position.X = 10.000000000000000000
+          Position.Y = 205.000000000000000000
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Size.Width = 608.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          object PasswordEditButton2: TPasswordEditButton
+            CanFocus = False
+            Cursor = crArrow
+            Size.Width = 28.000000000000000000
+            Size.Height = 28.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+          end
+        end
+        object BtnCreateAccount: TButton
+          Align = Top
+          Margins.Left = 50.000000000000000000
+          Margins.Top = 50.000000000000000000
+          Margins.Right = 50.000000000000000000
+          Position.X = 50.000000000000000000
+          Position.Y = 287.000000000000000000
+          Size.Width = 528.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 6
+          Text = 'Create a new account'
+          OnClick = BtnCreateAccountClick
+        end
+      end
+    end
+    object TabDashboard: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 78.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      TabStop = False
+      Text = 'Dashboard'
+      ExplicitSize.cx = 78.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object TCDashboard: TTabControl
+        Align = Client
+        Size.Width = 628.000000000000000000
+        Size.Height = 423.000000000000000000
+        Size.PlatformDefault = False
+        TabHeight = 49.000000000000000000
+        TabIndex = 0
+        TabOrder = 0
+        TabStop = False
+        TabPosition = PlatformDefault
+        Sizes = (
+          628s
+          374s
+          628s
+          374s
+          628s
+          374s)
+        object TabProfile: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = True
+          Size.Width = 54.000000000000000000
+          Size.Height = 49.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          TabStop = False
+          Text = 'Profile'
+          ExplicitSize.cx = 54.000000000000000000
+          ExplicitSize.cy = 26.000000000000000000
+          object VertScrollBox3: TVertScrollBox
+            Align = Client
+            Size.Width = 628.000000000000000000
+            Size.Height = 374.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Viewport.Width = 612.000000000000000000
+            Viewport.Height = 374.000000000000000000
+            object BtnLogout: TButton
+              Align = Top
+              Margins.Left = 50.000000000000000000
+              Margins.Top = 50.000000000000000000
+              Margins.Right = 50.000000000000000000
+              Position.X = 50.000000000000000000
+              Position.Y = 449.000000000000000000
+              Size.Width = 512.000000000000000000
+              Size.Height = 33.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 5
+              Text = 'Log out'
+              OnClick = BtnLogoutClick
+            end
+            object BtnUpdateProfile: TButton
+              Align = Top
+              Margins.Left = 50.000000000000000000
+              Margins.Top = 50.000000000000000000
+              Margins.Right = 50.000000000000000000
+              Position.X = 50.000000000000000000
+              Position.Y = 366.000000000000000000
+              Size.Width = 512.000000000000000000
+              Size.Height = 33.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 4
+              Text = 'Update profile'
+              OnClick = BtnUpdateProfileClick
+            end
+            object EditProfileConfimPassword: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Top
+              TabOrder = 3
+              Password = True
+              Position.X = 10.000000000000000000
+              Position.Y = 284.000000000000000000
+              Margins.Left = 10.000000000000000000
+              Margins.Top = 10.000000000000000000
+              Margins.Right = 10.000000000000000000
+              Size.Width = 592.000000000000000000
+              Size.Height = 32.000000000000000000
+              Size.PlatformDefault = False
+              object PasswordEditButton3: TPasswordEditButton
+                CanFocus = False
+                Cursor = crArrow
+                Size.Width = 28.000000000000000000
+                Size.Height = 28.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+              end
+            end
+            object Label9: TLabel
+              Align = Top
+              Margins.Left = 10.000000000000000000
+              Margins.Top = 20.000000000000000000
+              Margins.Right = 10.000000000000000000
+              Position.X = 10.000000000000000000
+              Position.Y = 257.000000000000000000
+              Size.Width = 592.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Confirm password'
+              TabOrder = 7
+            end
+            object EditProfileEmail: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Top
+              TabOrder = 1
+              Position.X = 10.000000000000000000
+              Position.Y = 126.000000000000000000
+              Margins.Left = 10.000000000000000000
+              Margins.Top = 10.000000000000000000
+              Margins.Right = 10.000000000000000000
+              Size.Width = 592.000000000000000000
+              Size.Height = 32.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object Label8: TLabel
+              Align = Top
+              Margins.Left = 10.000000000000000000
+              Margins.Top = 20.000000000000000000
+              Margins.Right = 10.000000000000000000
+              Position.X = 10.000000000000000000
+              Position.Y = 99.000000000000000000
+              Size.Width = 592.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'User mail'
+              TabOrder = 8
+            end
+            object EditProfileName: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Top
+              TabOrder = 0
+              Position.X = 10.000000000000000000
+              Position.Y = 47.000000000000000000
+              Margins.Left = 10.000000000000000000
+              Margins.Top = 10.000000000000000000
+              Margins.Right = 10.000000000000000000
+              Size.Width = 592.000000000000000000
+              Size.Height = 32.000000000000000000
+              Size.PlatformDefault = False
+            end
+            object Label7: TLabel
+              Align = Top
+              Margins.Left = 10.000000000000000000
+              Margins.Top = 20.000000000000000000
+              Margins.Right = 10.000000000000000000
+              Position.X = 10.000000000000000000
+              Position.Y = 20.000000000000000000
+              Size.Width = 592.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'User name'
+              TabOrder = 9
+            end
+            object Label12: TLabel
+              Align = Top
+              Margins.Left = 10.000000000000000000
+              Margins.Top = 20.000000000000000000
+              Margins.Right = 10.000000000000000000
+              Position.X = 10.000000000000000000
+              Position.Y = 178.000000000000000000
+              Size.Width = 592.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'New password'
+              TabOrder = 6
+            end
+            object EditProfileNewPassword: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Top
+              TabOrder = 2
+              Password = True
+              Position.X = 10.000000000000000000
+              Position.Y = 205.000000000000000000
+              Margins.Left = 10.000000000000000000
+              Margins.Top = 10.000000000000000000
+              Margins.Right = 10.000000000000000000
+              Size.Width = 592.000000000000000000
+              Size.Height = 32.000000000000000000
+              Size.PlatformDefault = False
+              object PasswordEditButton4: TPasswordEditButton
+                CanFocus = False
+                Cursor = crArrow
+                Size.Width = 28.000000000000000000
+                Size.Height = 28.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+              end
+            end
+          end
+        end
+        object TabCustomers: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 77.000000000000000000
+          Size.Height = 49.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          TabStop = False
+          Text = 'Customers'
+          ExplicitSize.cx = 77.000000000000000000
+          ExplicitSize.cy = 26.000000000000000000
+          object GridCustomers: TGrid
+            Align = Client
+            CanFocus = True
+            ClipChildren = True
+            Size.Width = 628.000000000000000000
+            Size.Height = 324.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 9
+            Viewport.Width = 624.000000000000000000
+            Viewport.Height = 299.000000000000000000
+          end
+          object NavigatorBindSourceDB1: TBindNavigator
+            Align = Top
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Position.X = 10.000000000000000000
+            Position.Y = 10.000000000000000000
+            Size.Width = 608.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 14
+            DataSource = BindSourceDB1
+            xRadius = 4.000000000000000000
+            yRadius = 4.000000000000000000
+          end
+        end
+        object TabUsers: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 50.000000000000000000
+          Size.Height = 49.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = ''
+          TabOrder = 0
+          TabStop = False
+          Text = 'Users'
+          ExplicitSize.cx = 49.000000000000000000
+          ExplicitSize.cy = 26.000000000000000000
+          object NavigatorBindSourceDB2: TBindNavigator
+            Align = Top
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Position.X = 10.000000000000000000
+            Position.Y = 10.000000000000000000
+            Size.Width = 608.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 9
+            DataSource = BindSourceDB2
+            xRadius = 4.000000000000000000
+            yRadius = 4.000000000000000000
+          end
+          object GridUsers: TGrid
+            Align = Client
+            CanFocus = True
+            ClipChildren = True
+            Size.Width = 628.000000000000000000
+            Size.Height = 324.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 10
+            Viewport.Width = 624.000000000000000000
+            Viewport.Height = 299.000000000000000000
+          end
+        end
+      end
+    end
+  end
+  object TableProfile: TFDMemTable
+    FieldDefs = <>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvUpdateChngFields, uvUpdateMode, uvLockMode, uvLockPoint, uvLockWait, uvRefreshMode, uvFetchGeneratorsPoint, uvCheckRequired, uvCheckReadOnly, uvCheckUpdatable, uvAutoCommitUpdates]
+    UpdateOptions.LockWait = True
+    UpdateOptions.FetchGeneratorsPoint = gpNone
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    Left = 55
+    Top = 250
+    object TableProfileId: TAutoIncField
+      DisplayLabel = 'Id'
+      FieldName = 'id'
+      ReadOnly = True
+    end
+    object TableProfileName: TWideStringField
+      DisplayLabel = 'Name'
+      DisplayWidth = 10
+      FieldName = 'name'
+      Size = 60
+    end
+    object TableProfileEmail: TWideStringField
+      DisplayLabel = 'Email'
+      DisplayWidth = 10
+      FieldName = 'email'
+      Size = 255
+    end
+    object TableProfilePass: TWideStringField
+      DisplayLabel = 'Pass'
+      DisplayWidth = 10
+      FieldName = 'pass'
+      Size = 255
+    end
+    object TableProfileCapabilities: TIntegerField
+      DisplayLabel = 'Capabilities'
+      DisplayWidth = 10
+      FieldName = 'capabilities'
+    end
+  end
+  object TableCustomers: TFDMemTable
+    FieldDefs = <>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvUpdateChngFields, uvUpdateMode, uvLockMode, uvLockPoint, uvLockWait, uvRefreshMode, uvFetchGeneratorsPoint, uvCheckRequired, uvCheckReadOnly, uvCheckUpdatable, uvAutoCommitUpdates]
+    UpdateOptions.LockWait = True
+    UpdateOptions.FetchGeneratorsPoint = gpNone
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    Left = 55
+    Top = 306
+    object TableCustomersId: TAutoIncField
+      DisplayLabel = 'Id'
+      FieldName = 'id'
+      ReadOnly = True
+    end
+    object TableCustomersName: TWideStringField
+      DisplayLabel = 'Name'
+      DisplayWidth = 10
+      FieldName = 'name'
+      Size = 100
+    end
+    object TableCustomersContact: TWideStringField
+      DisplayLabel = 'Contact'
+      DisplayWidth = 10
+      FieldName = 'contact'
+      Size = 100
+    end
+    object TableCustomersAddress: TWideStringField
+      DisplayLabel = 'Address'
+      DisplayWidth = 10
+      FieldName = 'address'
+      Size = 255
+    end
+    object TableCustomersCity: TWideStringField
+      DisplayLabel = 'City'
+      DisplayWidth = 10
+      FieldName = 'city'
+    end
+    object TableCustomersPostal: TWideStringField
+      DisplayLabel = 'Postal'
+      DisplayWidth = 10
+      FieldName = 'postal'
+      Size = 60
+    end
+    object TableCustomersCountry: TWideStringField
+      DisplayLabel = 'Country'
+      DisplayWidth = 10
+      FieldName = 'country'
+      Size = 60
+    end
+  end
+  object RESTClient: TRESTClient
+    Params = <>
+    SynchronizedEvents = False
+    Left = 488
+    Top = 200
+  end
+  object RESTRequest: TRESTRequest
+    AssignedValues = [rvConnectTimeout, rvReadTimeout]
+    Client = RESTClient
+    Method = rmPOST
+    Params = <
+      item
+        Name = 'user'
+      end
+      item
+        Name = 'mail'
+      end
+      item
+        Name = 'pswd'
+      end
+      item
+        Name = 'proc'
+      end
+      item
+        Kind = pkREQUESTBODY
+        Name = 'data'
+      end>
+    Response = RESTResponse
+    SynchronizedEvents = False
+    Left = 488
+    Top = 256
+  end
+  object RESTResponse: TRESTResponse
+    Left = 488
+    Top = 312
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 36
+    Top = 173
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB3
+      FieldName = 'Name'
+      Control = EditProfileName
+      Track = False
+    end
+    object LinkControlToField2: TLinkControlToField
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB3
+      FieldName = 'Email'
+      Control = EditProfileEmail
+      Track = False
+    end
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB1
+      GridControl = GridCustomers
+      Columns = <>
+    end
+    object LinkGridToDataSourceBindSourceDB22: TLinkGridToDataSource
+      Category = 'Liaisons rapides'
+      DataSource = BindSourceDB2
+      GridControl = GridUsers
+      Columns = <>
+    end
+  end
+  object BindSourceDB2: TBindSourceDB
+    DataSet = TableUsers
+    ScopeMappings = <>
+    Left = 256
+    Top = 368
+  end
+  object TableUsers: TFDMemTable
+    FieldDefs = <>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvUpdateChngFields, uvUpdateMode, uvLockMode, uvLockPoint, uvLockWait, uvRefreshMode, uvFetchGeneratorsPoint, uvCheckRequired, uvCheckReadOnly, uvCheckUpdatable, uvAutoCommitUpdates]
+    UpdateOptions.LockWait = True
+    UpdateOptions.FetchGeneratorsPoint = gpNone
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    Left = 55
+    Top = 370
+    object AutoIncField1: TAutoIncField
+      DisplayLabel = 'Id'
+      FieldName = 'id'
+      ReadOnly = True
+    end
+    object WideStringField1: TWideStringField
+      DisplayLabel = 'Name'
+      DisplayWidth = 10
+      FieldName = 'name'
+      Size = 60
+    end
+    object WideStringField2: TWideStringField
+      DisplayLabel = 'Email'
+      DisplayWidth = 10
+      FieldName = 'email'
+      Size = 255
+    end
+    object WideStringField3: TWideStringField
+      DisplayLabel = 'Pass'
+      DisplayWidth = 10
+      FieldName = 'pass'
+      Size = 255
+    end
+    object IntegerField1: TIntegerField
+      DisplayLabel = 'Capabilities'
+      DisplayWidth = 10
+      FieldName = 'capabilities'
+    end
+  end
+  object BindSourceDB3: TBindSourceDB
+    DataSet = TableProfile
+    ScopeMappings = <>
+    Left = 256
+    Top = 248
+  end
+  object RESTResponseDataSetAdapter: TRESTResponseDataSetAdapter
+    FieldDefs = <>
+    Response = RESTResponse
+    Left = 488
+    Top = 370
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = TableCustomers
+    ScopeMappings = <>
+    Left = 256
+    Top = 312
+  end
+end
